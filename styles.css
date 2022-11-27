@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+:root{
+    --primary: rgb(177, 38, 252);
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    background-color: rgb(0, 0, 0);
+}
+body{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+}
+
+h1{
+    margin: 3rem 1rem 2rem;
+    color: white;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+#date-of-birth{
+    color: white;
+    width: 15rem;
+    height: 2rem;
+    margin: 0rem auto 2rem;
+    border: 2px solid var(--primary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    text-align: center;
+}
+
+#date-of-birth:focus{
+    outline: none;
+}
+#lucky-number{
+    width: 15rem;
+    height: 2rem;
+    margin: 0rem auto 2rem;
+    border: 2px solid var(--primary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+}
+#lucky-number:focus{
+    outline: none;
+}
+
+.check-btn{
+    color: white;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.result-msg{
+    color: var(--primary);
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.footer{
+    margin-top: 3rem;
+    color: white;
+}
+.privacy{
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: white;
+}
+#red{
+    color:red;
+}
