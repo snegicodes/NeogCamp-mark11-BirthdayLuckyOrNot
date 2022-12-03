@@ -6,11 +6,18 @@ const resultMsg = document.querySelector(".result-msg");
 checkButton.addEventListener("click", () => {
   const date = dateOfBirth.value;
   const luckyNum = luckyNumber.value;
-  if (date && luckyNum) {
-    const dateSum = sumOfDate(date);
-    isBirthdayLucky(dateSum, luckyNum);
+
+  if (luckyNum > 0) {
+    if (date && luckyNum) {
+      const dateSum = sumOfDate(date);
+      isBirthdayLucky(dateSum, luckyNum);
+    } else {
+      resultMsg.innerText = "Please fill both the fields";
+      resultMsg.style.color = "red";
+    }
   } else {
-    resultMsg.innerText = "Please fill both the fields";
+    resultMsg.innerText = "Lucky Number must be greater than 0";
+    resultMsg.style.color = "red";
   }
 });
 
